@@ -20,7 +20,7 @@ app.post('/register', (req, res) => {
 });
 app.post('/validlogin', (req, res) => {
     console.log('requested login');
-    res.status(403);
+    res.status(200);
     res.end();
 
 });

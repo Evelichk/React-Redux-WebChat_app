@@ -1,6 +1,6 @@
 {
-  "name": "true_company",
-  "version": "1.0.0",
+  "name": "Webchat",
+  "version": "0.0.2",
   "description": "webchat-api",
   "main": "Server.js",
   "scripts": {

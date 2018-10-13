@@ -161,7 +161,7 @@ footer p{
     cursor:pointer;
     overflow: hidden;
 }
-.submit-button:hover {
+.submit-button:hover{
     background-color:#00aa06;
     color: #ffffff;
     transition: 1.5s;
@@ -169,8 +169,11 @@ footer p{
 .submit-button:not(:hover){
     transition: 1.5s;
 }
-.submit-button:disabled:hover{
+.submit-button[disabled]{
     cursor: default;
+    background-color: #ffffff;
+    color: red;
+    transition: none;
 }
 .myButton:active {
     position:relative;
@@ -191,7 +194,28 @@ footer p{
     align-items: center;
     margin-top: 5%;
 }
-#warning{
+#login-warning{
+     color: red;
+     text-align: center;
+     margin-top: 2%;
+     font-size: 80%;
+     margin-bottom: 0%;
+ }
+#email-warning{
+    color: red;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    margin-bottom: 0%;
+}
+#password-warning{
+    color: red;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    margin-bottom: 0%;
+}
+#checkPass-warning{
     color: red;
     text-align: center;
     margin-top: 2%;
