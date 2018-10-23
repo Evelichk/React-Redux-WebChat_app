@@ -36,7 +36,6 @@ class Main extends Component {
 }
 
 const mapStateToProps = store => {
-    console.log(store);
     return {
         chat: store.chat,
         user: store.user,

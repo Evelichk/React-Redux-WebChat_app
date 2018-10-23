@@ -1,10 +1,11 @@
 {
     "port": "3000",
     "mongoose": {
-        "uri": "mongodb://localhost:27017/users",
+        "uri": "mongodb://localhost:27017/webchat",
         "options": {
+            "useCreateIndex": "true",
             "useNewUrlParser": "true",
-            "dbName": "visitors",
+            "dbName": "webchat",
             "reconnectTries": "20",
             "reconnectInterval": "1000"
         }

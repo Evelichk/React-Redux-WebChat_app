@@ -222,3 +222,17 @@ footer p{
     font-size: 80%;
     margin-bottom: 0%;
 }
+#submit-warning{
+    color: red;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    margin-bottom: 0%;
+}
+#form-warning{
+    color: red;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    margin-bottom: 0%;
+}

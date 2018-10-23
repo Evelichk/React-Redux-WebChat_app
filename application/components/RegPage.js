@@ -1,7 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import { warnToggle } from "../../libs/warnToggle";
+import {warner} from "../../libs/warner";
 
 
 export default class RegPage extends Component {
@@ -27,6 +27,7 @@ export default class RegPage extends Component {
             if (name !== 'login') this.validateField(name, value)
         })
     };
+    //fetching login input to the server for checking it's existence in DB when onBlur event fires
     validateLogin = (e) => {
         let loginValid = this.state.loginValid;
         if (!e.target.value) return;
@@ -35,30 +36,30 @@ export default class RegPage extends Component {
             cache: 'default',
             body: e.target.value
         };
-        //fetching login to the server for search if it's already exsits in DB
         fetch('/validlogin', options)
             .then((response) => {
                 switch(response.status){
                     case 200:
                         // toggle function for warning message
-                        warnToggle('login', true);
+                        warner(true, 'login');
                         loginValid = true;
                         console.log('LOGIN_AVALIABLE');
                         this.setState({loginValid: loginValid});
                         break;
                     case 403:
-                        warnToggle('login', false);
+                        warner(false, 'login', 'Login is already in use');
                         console.log('LOGIN_IN_USE');
                         break;
                     default: break;
                 }
             })
-            .catch(() => {
+            .catch((error) => {
                 console.log('LOGIN_VALIDATION_FETCH_ERROR');
                 console.log(error);
-                warnToggle('loginFailed', false)
+                warner(false, 'login', 'Sorry, Login validation failed. Please try again later');
             })
     };
+    //validates user input and changing state for form validation
     validateField = (field, value) => {
         let emailValid = this.state.emailValid;
         let passwordValid = this.state.passwordValid;
@@ -80,20 +81,18 @@ export default class RegPage extends Component {
 
         this.setState({ emailValid: emailValid, passwordValid: passwordValid, checkPassValid: checkPassValid}, this.validateForm)
     };
+    //warning message function for failed validations, uses tag name where it should appear and status true(no message)/false(add message)
     addWarnMessage = (e) => {
         if (!e.target.value) return;
         switch(e.target.name){
             case 'email':
-                console.log('INVALID_USER_EMAIL');
-                warnToggle('email', !!this.state.emailValid);
+                warner(!!this.state.emailValid, 'email', 'E-mail is invalid');
                 break;
             case 'password':
-                console.log('INVALID_USER_PASSWORD');
-                warnToggle('password', this.state.passwordValid);
+                warner(this.state.passwordValid, 'password', 'Password too short');
                 break;
             case 'checkPass':
-                console.log('INVALID_USER_CHECK_PASSWORD');
-                warnToggle('checkPass', this.state.checkPassValid);
+                warner(this.state.checkPassValid, 'checkPass', 'Password and check password doesn\'t match' );
                 break;
             default:
                 break;
@@ -115,19 +114,22 @@ export default class RegPage extends Component {
                     success = true;
                     console.log('REGISTRATION_SUCCESSFUL');
                     this.setState(({success: success}))
+                } else if (response.status === 403){
+                    console.log('EMAIL_IS_ALREADY_IN_USE');
+                    warner(false, 'form', 'Sorry, E-mail is already in use')
                 }
             })
             .catch((error) => {
                 console.log('SUBMIT_FETCH_ERROR');
                 console.log(error);
-                warnToggle('submit', false)
+                warner(false, 'submit','Sorry it seems something went wrong. Please try again later')
             })
     };
     validateForm(){
         this.setState({formValid: this.state.loginValid && this.state.emailValid && this.state.passwordValid && this.state.checkPassValid});
     }
     render(){
-        if(this.state.success === true){
+        if(this.state.success){
             return <Redirect to='/webchat'/>
         }
         return (
@@ -135,12 +137,12 @@ export default class RegPage extends Component {
                 <div className='form-header'>
                     <h1>REGISTRATION</h1>
                 </div>
-                <form className='login-form' onSubmit={this.handleSubmit}>
+                <form className='login-form' onSubmit={this.handleSubmit} id='form'>
                     <div id='login'>
-                        <input type='text'  value={this.state.login} placeholder='Login' name='login' autoComplete="off" onChange={this.handleUserInput} onBlur={this.validateLogin}/>
+                        <input type='text'  value={this.state.login} placeholder='Login' name='login' onChange={this.handleUserInput} onBlur={this.validateLogin}/>
                     </div>
                     <div id='email'>
-                        <input type='email' value={this.state.email} placeholder='E-mail' name='email'  autoComplete="off" onChange={this.handleUserInput} onBlur={this.addWarnMessage}/>
+                        <input type='email' value={this.state.email} placeholder='E-mail' name='email' onChange={this.handleUserInput} onBlur={this.addWarnMessage}/>
                     </div>
                     <div id='password'>
                         <input type='password' value={this.state.password} placeholder='Password' name='password'  autoComplete="off" onChange={this.handleUserInput} onBlur={this.addWarnMessage}/>

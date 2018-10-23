@@ -1,14 +1,50 @@
 'use strict';
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
+import {warner} from "../../libs/warner";
 
 
 export default class LoginPage extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            success: false
+        }
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        let data = new FormData(e.target);
+        const options ={
+            method: 'POST',
+            cache: 'default',
+            body: data
+        };
+        fetch('/login', options)
+            .then((response) => {
+                console.log('login sent');
+                if (response.status !== 200){
+                    warner(false, 'loginSubmit', 'Login or Password is invalid')
+                } else {
+                    this.setState({success: true})
+                }
+
+            })
+            .catch((error) => {
+                console.log('LOGIN_SUBMIT_FETCH_ERROR');
+                console.log(error);
+                warner(false, 'submit','Sorry it seems something went wrong. Please try again later')
+            })
+
+    };
     render(){
+        if (this.state.success === true){
+            return <Redirect to='/webchat'/>
+        }
         return (
             <div className='login-conteiner'>
                 <div className='form-header'><h1>SIGN IN TO WEBCHAT</h1></div>
-                <form className='login-form'>
+                <form className='login-form' id='loginSubmit' onSubmit={this.handleSubmit}>
                     <div><input type='text' autoComplete="on" placeholder='Login'/></div>
                     <div><input type='password' autoComplete="on" placeholder='Password'/></div>
                     <div>
