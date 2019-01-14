@@ -3,13 +3,14 @@
 import React from 'react';
 import {Component} from 'react';
 
-export default class OnlineUsers extends Component{
+export default class UsersList extends Component{
     render(){
         return(
             <ul className="user_list">
-                <li>User 1</li>
-                <li>User 2</li>
-                <li>User 3</li>
+                {this.props.users.map((users) =>
+                    <li key={users.id}>{users.user}</li>
+                )}
+
             </ul>
         )
     }

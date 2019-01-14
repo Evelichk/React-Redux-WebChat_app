@@ -31,12 +31,18 @@ export default class RegPage extends Component {
     validateLogin = (e) => {
         let loginValid = this.state.loginValid;
         if (!e.target.value) return;
-        const options = {
+        let data = JSON.stringify({
+            login: e.target.value
+        });
+        let myHeaders = new Headers();
+        myHeaders.append('Content-Type', 'application/json; charset=utf-8');
+        const options ={
             method: 'POST',
             cache: 'default',
-            body: e.target.value
+            body: data,
+            headers: myHeaders
         };
-        fetch('/validlogin', options)
+        fetch('/checklogin', options)
             .then((response) => {
                 switch(response.status){
                     case 200:
@@ -98,6 +104,7 @@ export default class RegPage extends Component {
                 break;
         }
 };
+    //submit form handler
     handleSubmit = (e) => {
         e.preventDefault();
         console.log('USER_FORM_SENT_TO_SERVER');

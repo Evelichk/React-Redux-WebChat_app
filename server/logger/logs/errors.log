@@ -34,3 +34,107 @@
 2018-10-23 22:29:16 [31merror[39m: [31m403 Duplicate email[39m
 2018-10-23 22:29:57 [31merror[39m: [31m403 Duplicate email[39m
 2018-10-23 22:30:47 [31merror[39m: [31m403 Duplicate email[39m
+2018-10-24 20:34:24 [31merror[39m: [31mundefined Cannot read property 'password' of undefined[39m
+2018-10-24 20:43:52 [31merror[39m: [31mundefined Cannot read property 'login' of undefined[39m
+2018-10-24 20:44:47 [31merror[39m: [31mundefined Cannot read property 'login' of undefined[39m
+2018-10-24 20:45:04 [31merror[39m: [31mundefined Cannot read property 'login' of undefined[39m
+2018-10-24 20:45:18 [31merror[39m: [31mundefined Cannot read property 'login' of undefined[39m
+2018-10-24 20:47:01 [31merror[39m: [31mundefined User.checkPassword is not a function[39m
+2018-10-24 20:48:29 [31merror[39m: [31mundefined User.checkPassword is not a function[39m
+2018-10-24 20:49:35 [31merror[39m: [31mundefined password is not defined[39m
+2018-10-24 20:50:49 [31merror[39m: [31mundefined password is not defined[39m
+2018-10-24 20:51:13 [31merror[39m: [31mundefined password is not defined[39m
+2018-10-24 20:51:35 [31merror[39m: [31mundefined password is not defined[39m
+2018-10-24 20:52:42 [31merror[39m: [31mundefined User is not defined[39m
+2018-10-24 20:59:22 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:00:13 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:00:13 [31merror[39m: [31mCannot convert object to primitive value[39m
+2018-10-24 21:05:42 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:06:15 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:06:48 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:11:58 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:12:33 [31merror[39m: [31mundefined Cannot convert object to primitive value[39m
+2018-10-24 21:21:58 [31merror[39m: [31mundefined Cannot read property 'login' of undefined[39m
+2018-10-24 21:24:45 [31merror[39m: [31mundefined Unexpected token u in JSON at position 0[39m
+2018-10-24 21:24:54 [31merror[39m: [31mundefined Unexpected token u in JSON at position 0[39m
+2018-10-24 21:25:25 [31merror[39m: [31mundefined Unexpected token u in JSON at position 0[39m
+2018-10-24 21:25:52 [31merror[39m: [31mundefined login is not defined[39m
+2018-10-24 21:30:46 [31merror[39m: [31mundefined login is not defined[39m
+2018-10-24 21:31:33 [31merror[39m: [31mundefined login is not defined[39m
+2018-10-24 21:41:58 [31merror[39m: [31mundefined login is not defined[39m
+2018-10-24 21:46:31 [31merror[39m: [31mundefined login is not defined[39m
+2018-10-24 22:02:25 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-24 22:03:36 [31merror[39m: [31m403 Duplicate email[39m
+2018-10-24 22:03:59 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-24 22:04:13 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-24 22:07:27 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-24 22:11:03 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-27 09:17:31 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-27 09:18:07 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-27 09:18:18 [31merror[39m: [31m403 Login is already in use[39m
+2018-10-27 09:32:46 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 09:32:51 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 09:33:36 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 09:33:41 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 09:35:48 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 13:16:47 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 13:17:24 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 13:17:53 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 13:18:27 [31merror[39m: [31mundefined undefined[39m
+2018-10-27 13:43:22 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 13:43:32 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 13:45:14 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:11:22 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:11:28 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:11:30 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:12:17 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:16:01 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:16:27 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:16:31 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:17:08 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:17:40 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:18:29 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 14:18:32 [31merror[39m: [31m403 Invalid Password[39m
+2018-10-27 15:04:31 [31merror[39m: [31mundefined User is not defined[39m
+2018-10-27 15:28:20 [31merror[39m: [31mENOENT ENOENT: no such file or directory, stat 'D:\Project\WebChat\routes\public\index.html'[39m
+2018-10-27 15:28:46 [31merror[39m: [31mENOENT ENOENT: no such file or directory, stat 'D:\Project\WebChat\routes\public\index.html'[39m
+2018-10-27 15:34:59 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-27 15:37:12 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-27 15:58:35 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-27 16:00:34 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-27 16:01:52 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-27 16:02:52 [31merror[39m: [31mundefined path must be absolute or specify root to res.sendFile[39m
+2018-10-28 15:28:53 [31merror[39m: [31m[31merror[31m[39m
+2018-10-29 21:13:28 [31merror[39m: [31mundefined Cannot read property 'dirname' of undefined[39m
+2018-10-29 21:15:09 [31merror[39m: [31mundefined next is not defined[39m
+2018-10-29 21:15:35 [31merror[39m: [31mundefined Cannot read property 'dirname' of undefined[39m
+2018-10-29 21:17:05 [31merror[39m: [31mundefined rdirname is not defined[39m
+2018-10-31 21:13:39 [31merror[39m: [31mMongoose Connection ERROR to DB: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017][39m
+2018-11-06 20:56:30 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:53 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:54 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:54 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:54 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:54 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:54 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:59 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:59 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:56:59 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:57:29 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:23 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:24 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:25 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:25 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:25 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:25 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:30 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:30 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 20:58:30 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 21:06:48 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 21:44:39 [31merror[39m: [31mERR_HTTP_INVALID_STATUS_CODE Invalid status code: username[39m
+2018-11-06 21:44:40 [31merror[39m: [31mERR_HTTP_INVALID_STATUS_CODE Invalid status code: username[39m
+2018-11-06 21:46:57 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 21:46:58 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 21:46:59 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2018-11-06 22:13:36 [31merror[39m: [31mundefined userName is not defined[39m
+2018-11-10 13:44:58 [31merror[39m: [31m11000 E11000 duplicate key error collection: webchat.users index: username_1 dup key: { : "dedushka_tbikva" }[39m

@@ -5,8 +5,8 @@ const initialState = {
 
 export function chatReducer(state = initialState, action) {
     switch (action.type){
-        case 'SEND_MESSAGE':
-            return {...state, chat: state.messages.push(action.playload)};
+        case 'SOCKET_MESSAGE_RECEIVED':
+            return {...state, chat: state.messages.push({id: action.id, text: action.playload})};
 
         default:
             return state

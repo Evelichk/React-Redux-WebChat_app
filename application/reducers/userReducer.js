@@ -1,9 +1,14 @@
 'use strict';
 
 const initialState = {
-  user: {}
+  username: ''
 };
 
-export function userReducer(state = initialState) {
-    return state
+export function userReducer(state = initialState, action) {
+    switch(action.type){
+        case 'SHOW_USER':
+            return {...state, username: action.playload};
+        default:
+            return state
+    }
 }

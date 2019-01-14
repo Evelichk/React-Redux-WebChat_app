@@ -22,8 +22,8 @@ export default class LoginPage extends Component {
         };
         fetch('/login', options)
             .then((response) => {
-                console.log('login sent');
                 if (response.status !== 200){
+                    console.log('LOGIN_OR_PASSWORD_INVALID');
                     warner(false, 'loginSubmit', 'Login or Password is invalid')
                 } else {
                     this.setState({success: true})
@@ -32,8 +32,7 @@ export default class LoginPage extends Component {
             })
             .catch((error) => {
                 console.log('LOGIN_SUBMIT_FETCH_ERROR');
-                console.log(error);
-                warner(false, 'submit','Sorry it seems something went wrong. Please try again later')
+                warner(false, 'loginSubmit','Sorry it seems something went wrong. Please try again later')
             })
 
     };
@@ -45,8 +44,8 @@ export default class LoginPage extends Component {
             <div className='login-conteiner'>
                 <div className='form-header'><h1>SIGN IN TO WEBCHAT</h1></div>
                 <form className='login-form' id='loginSubmit' onSubmit={this.handleSubmit}>
-                    <div><input type='text' autoComplete="on" placeholder='Login'/></div>
-                    <div><input type='password' autoComplete="on" placeholder='Password'/></div>
+                    <div><input type='text' autoComplete="on" placeholder='Login' name='username'/></div>
+                    <div><input type='password' autoComplete="on" placeholder='Password' name='password'/></div>
                     <div>
                         <button type='submit' className='submit-button'>Sign In</button>
                     </div>

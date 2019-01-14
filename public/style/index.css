@@ -236,3 +236,10 @@ footer p{
     font-size: 80%;
     margin-bottom: 0%;
 }
+#loginSubmit-warning{
+    color: red;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 80%;
+    margin-bottom: 0%;
+}

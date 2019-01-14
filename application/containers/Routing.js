@@ -19,7 +19,8 @@ export default class Routing extends Component {
                         <Route path='/index.html' component={LoginPage}/>
                         <Route path='/registration' component={RegPage}/>
                         <Route path='/webchat' component={Main}/>
-                        <Route path='/notfound'component={notFound}/>
+                        <Route path='/' exact component={LoginPage}/>
+                        <Route component={notFound}/>
                     </Switch>
                 </Router>
         )

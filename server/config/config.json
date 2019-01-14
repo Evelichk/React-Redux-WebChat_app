@@ -9,5 +9,15 @@
             "reconnectTries": "20",
             "reconnectInterval": "1000"
         }
+    },
+    "session": {
+        "secret": "vRykqWmgPdfbZ1",
+        "key": "sid",
+        "resave": "true",
+        "saveUninitialized": "true",
+        "cookie": {
+            "httpOnly": "true",
+            "maxAge": 86400000
+        }
     }
 }

@@ -1,12 +1,12 @@
 'use strict';
-import {combineReducers} from 'redux';
-import {chatReducer} from './chatReducer'
-import {userReducer} from './userReducer';
-import {usersReducer} from './usersOnlineReducer';
+import { combineReducers } from 'redux';
+import { chatReducer } from './chatReducer'
+import { userReducer } from './userReducer';
+import { usersListReducer } from './usersListReducer';
 
 
 export const rootReducer = combineReducers({
-    user: userReducer,
-    usersOnline: usersReducer,
+    username: userReducer,
+    usersList: usersListReducer,
     chat: chatReducer
 });
