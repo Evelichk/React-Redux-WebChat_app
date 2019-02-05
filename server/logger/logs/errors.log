@@ -138,3 +138,13 @@
 2018-11-06 21:46:59 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
 2018-11-06 22:13:36 [31merror[39m: [31mundefined userName is not defined[39m
 2018-11-10 13:44:58 [31merror[39m: [31m11000 E11000 duplicate key error collection: webchat.users index: username_1 dup key: { : "dedushka_tbikva" }[39m
+2019-02-04 21:23:16 [31merror[39m: [31mundefined err is not defined[39m
+2019-02-04 21:32:26 [31merror[39m: [31mundefined next is not defined[39m
+2019-02-04 21:32:29 [31merror[39m: [31mundefined next is not defined[39m
+2019-02-04 21:39:31 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:40:51 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:40:52 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:40:52 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:44:04 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:44:12 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m
+2019-02-04 21:44:16 [31merror[39m: [31mundefined Can't set headers after they are sent.[39m

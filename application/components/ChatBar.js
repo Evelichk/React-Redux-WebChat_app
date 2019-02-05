@@ -6,7 +6,8 @@ export default class ChatBar extends Component{
     handleSubmit = (e) => {
         e.preventDefault();
         const message = e.target.text.value;
-        this.props.sendSocketMessage(message);
+        console.log(typeof this.props.user.username);
+        this.props.sendSocketMessage(message, this.props.user.username);
         e.target.text.value = '';
     };
     render(){

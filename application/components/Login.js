@@ -17,6 +17,7 @@ export default class Login extends Component{
             })
             .then((data) => {
                 this.props.addUser(data.username);
+                this.props.connect();
             })
             .catch((error) => {
                 console.log(error);

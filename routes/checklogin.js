@@ -8,7 +8,7 @@ const HttpError = require('../error/HttpError');
 
 let jsonParser = bodyParser.json();
 //checking if the user login is avaliable (not stored in DB yet)
-router.post('/checklogin', jsonParser, (req, res, next) => {
+router.post('/checklogin', jsonParser, (req, res) => {
     User.checkLogin(req.body.login, (err, user) => {
         if (err){
             if (err instanceof AuthError){
@@ -17,10 +17,9 @@ router.post('/checklogin', jsonParser, (req, res, next) => {
                 return next(err)
             }
         } else {
-            res.status(200);
-            res.end();
+            res.status(200).end();
         }
-    })
+    });
 });
 
 module.exports = router;

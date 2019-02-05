@@ -12,12 +12,11 @@
     },
     "session": {
         "secret": "vRykqWmgPdfbZ1",
-        "key": "sid",
         "resave": "true",
         "saveUninitialized": "true",
         "cookie": {
             "httpOnly": "true",
-            "maxAge": 86400000
+            "maxAge": null
         }
     }
 }
