@@ -4,6 +4,7 @@ const path = require('path');
 
 const filename = path.join(__dirname, '/logs/errors.log' );
 
+//Server logger configuration
 const logger = module.exports = winston.createLogger({
     format: winston.format.combine(
         winston.format.colorize({all: true}),

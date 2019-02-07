@@ -9,8 +9,6 @@ import { notFound } from "../layouts/NotFound";
 import LoginPage from '../components/LoginPage'
 import RegPage from "../components/RegPage";
 
-
-
 export default class Routing extends Component {
     render(){
         return(

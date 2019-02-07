@@ -29,7 +29,7 @@ const userSchema = new Schema({
         default: Date.now
     }
 });
-
+//Encrypting password befre store
 userSchema.methods.encryptPassword = function(password) {
     return crypto.createHmac('sha512', this.salt).update(password).digest('hex')
 };
@@ -46,7 +46,7 @@ userSchema.virtual('password')
     .get(function () {
         return this.hashedPassword
     });
-
+//check login for exsistance in DB
 userSchema.statics.checkLogin = function(username, callback){
     const User = this;
     User.findOne({username: username}, function(err, user) {
@@ -58,7 +58,7 @@ userSchema.statics.checkLogin = function(username, callback){
         }
     });
 };
-
+//Checking login and password
 userSchema.statics.auth = function(username, password, callback){
     const User = this;
     User.findOne({username: username}, (err, user) => {
@@ -77,7 +77,7 @@ userSchema.statics.auth = function(username, password, callback){
 
     });
 };
-
+//Registration user in DB
 userSchema.statics.register = function(username, email, password, callback) {
     const User = this;
     User.findOne({email: email}, (err, user) => {

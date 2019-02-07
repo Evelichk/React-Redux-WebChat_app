@@ -1,4 +1,3 @@
-'use strict';
 
 class AuthError extends Error{
     constructor(message, code){

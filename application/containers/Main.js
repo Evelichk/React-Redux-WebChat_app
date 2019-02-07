@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { sendSocketMessage } from '../actions/sendSocketMessage';
 import { showUser } from '../actions/showUser';
 import { connectSocket } from "../actions/connectSocket";
-import {resetUserList} from "../actions/resetUserList";
+import {resetUserList} from "../actions/discon_user";
 
 
 class Main extends Component {

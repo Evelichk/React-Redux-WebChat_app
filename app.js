@@ -15,16 +15,14 @@ const main = require('./routes/main');
 const front = require('./routes/index');
 const username = require('./routes/username');
 
-
-
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(cookieParser());
 
 const sessionStore = require('libs/sessionStore');
+
 //initializing session connection
 app.use(session({
     secret: config.get('session:secret'),
-    key: config.get('session:key'),
     cookie: config.get('session:cookie'),
     resave: config.get('session:resave'),
     saveUninitialized: config.get('session:saveUninitialized'),

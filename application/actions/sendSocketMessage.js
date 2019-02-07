@@ -1,4 +1,3 @@
-'use strict';
 
 export function sendSocketMessage(userMessage, userName) {
     return {
